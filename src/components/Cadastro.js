@@ -69,7 +69,6 @@ export default function Cadastro() {
   async function submit(e) {
     e.preventDefault();
 
-//Axios envia uma requisicao OPTION antes da requisicao POST
     const retorno = await axios.post(url, {
       headers: {
         novoUsuario,
